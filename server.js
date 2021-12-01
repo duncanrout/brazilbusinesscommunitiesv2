@@ -10,6 +10,10 @@ app.get('/test', (req, res) => {
   res.send('Test!')
 })
 
+app.get('/home',function(req,res) {
+  res.sendFile('/index.html');
+});
+
 app.listen(port, () => {
   console.log(`Example app listening at http://localhost:${port}`)
 })
