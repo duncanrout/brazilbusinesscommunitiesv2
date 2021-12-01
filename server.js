@@ -1,21 +1,23 @@
-const express = require('express')
-const app = express()
-const port = 3000
+const express = require('express');
+const app = express();
+const path = require('path');
+const router = express.Router();
 
-app.get('/', (req, res) => {
-  res.send('Hello World!')
-})
-
-app.get('/test', (req, res) => {
-  res.send('Test!')
-})
-
-app.get('/home',function(req,res) {
-  res.sendFile('/index.html');
+router.get('/',function(req,res){
+  res.sendFile(path.join(__dirname+'/index.html'));
+  //__dirname : It will resolve to your project folder.
 });
 
-app.listen(port, () => {
-  console.log(`Example app listening at http://localhost:${port}`)
-})
+router.get('/books',function(req,res){
+  res.sendFile(path.join(__dirname+'/books.xml'));
+});
 
-app.use(express.static(__dirname + "/app"));
+router.get('/xml',function(req,res){
+  res.sendFile(path.join(__dirname+'/business-data.xml'));
+});
+
+//add the router
+app.use('/', router);
+app.listen(process.env.port || 3000);
+
+console.log('Running at Port 3000');
