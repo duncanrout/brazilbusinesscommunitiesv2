@@ -8,5 +8,4 @@
 ### npm start ... or ... node server.js
 ###
 ## Back-end work is being worked in server.js
-##
 ## index.html is where the front end will index
