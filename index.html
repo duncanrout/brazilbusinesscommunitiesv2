@@ -6,9 +6,42 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
 </head>
+<!-- put HTML homepage here! -->
 <body>
     <div id='content'>
       <h1> This is our project! </h1>
+        <ul class="nav navbar-nav">
+          <li class="active">
+            <a href="/">Home</a>
+          </li>
+          <li>
+            <a href="/business-data">BusinessData</a>
+          </li>
+          <li>
+            <a href="/christie1">example</a>
+          </li>
+        </ul>
+      <form id="frm1" action="/business-data">
+        <label for="name">Company Name:</label>
+        <input type="text" id="name" name="name"><br><br>
+        <div id="demo">
+            <button type="button" onclick="loadXMLDoc()">Submit</button>
+        </div>
+      </form>
     </div>
+
+  <script>
+  function loadXMLDoc() {
+    var xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function() {
+      if (this.readyState == 4 && this.status == 200) {
+        document.getElementById("demo").innerHTML =
+        this.responseText;
+      }
+    };
+    xhttp.open("GET", "business-data", true);
+    xhttp.send();
+  }
+  </script>
 </body>
 </html>

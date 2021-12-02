@@ -8,12 +8,20 @@ router.get('/',function(req,res){
   //__dirname : It will resolve to your project folder.
 });
 
-router.get('/books',function(req,res){
-  res.sendFile(path.join(__dirname+'/books.xml'));
+router.get('/christie1',function(req,res){
+  res.sendFile(path.join(__dirname+'/christie1.xml'));
 });
 
-router.get('/xml',function(req,res){
+router.get('/christie1.xsl',function(req,res){
+  res.sendFile(__dirname+'/christie1.xsl');
+});
+
+router.get('/business-data',function(req,res){
   res.sendFile(path.join(__dirname+'/business-data.xml'));
+});
+
+router.get('/business-data.xsl',function(req,res){
+  res.sendFile(__dirname+'/business-data.xsl');
 });
 
 //add the router

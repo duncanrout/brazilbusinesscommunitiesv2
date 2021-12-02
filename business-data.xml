@@ -1,5 +1,6 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<business-data xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="business-data.xsl"?>
+<business-data>
 	<business>
 		<uniqueID>1008118914</uniqueID>
 		<businessName>Liquigas Distribuidora S/A</businessName>
@@ -86,6 +87,7 @@
 		<uniqueID>01012441906</uniqueID>
 		<businessName>MUNICIPIO DE PONTA GROSSA</businessName>
 		<address1>Av. VISCONDE DE TAUNAY 950</address1>
+		<address2>---</address2>
 		<postCode>84051-900</postCode>
 		<city>Ponta Grossa</city>
 		<province>Paraná</province>
@@ -111,6 +113,7 @@
 		<uniqueID>01025792837</uniqueID>
 		<businessName>GIFTPAR COMERCIAL</businessName>
 		<address1>Rua ANNE FRANK 870</address1>
+		<address2>---</address2>
 		<postCode>81610-020</postCode>
 		<city>Curitiba</city>
 		<province>Paraná</province>
@@ -140,6 +143,7 @@
 		<uniqueID>01011235847</uniqueID>
 		<businessName>Minerva S/A</businessName>
 		<address1>Av. PROLONGAMENTO AVENIDA ANTONIO S/N</address1>
+		<address2>---</address2>
 		<postCode>14781-545</postCode>
 		<city>Barretos</city>
 		<province>São Paulo</province>
@@ -164,114 +168,5 @@
 		<familyMembers>54</familyMembers>
 		<legalStatus>Corporation</legalStatus>
 		<importExportAgent>Imports &amp; Exports</importExportAgent>
-	</business>
-	<business>
-		<uniqueID>01025691984</uniqueID>
-		<businessName>Tata de Mozambique Limitada (Test)</businessName>
-		<address1>Rua MARCO AURELIO 48</address1>
-		<postCode>31990-240</postCode>
-		<city>Belo Horizonte</city>
-		<province>Minas Gerais</province>
-		<country>Brazil</country>
-		<nationalID>75988543000168</nationalID>
-		<internationalCode>7319</internationalCode>
-		<internationalLabel>Advertising, nec</internationalLabel>
-		<language>POR</language>
-		<ceoName>Rolf Ramakers</ceoName>
-		<ceoTitle>Director</ceoTitle>
-		<ceoFirstName>Rolf</ceoFirstName>
-		<ceoLastName>Ramakers</ceoLastName>
-		<ceoGender>Male</ceoGender>
-		<yearStarted>2012</yearStarted>
-		<salesVolume>5996153028</salesVolume>
-		<currency>BRL</currency>
-		<employeesTotal>100</employeesTotal>
-		<statusCodeName>Single Location</statusCodeName>
-		<familyMembers>0</familyMembers>
-		<legalStatus>Proprietorship</legalStatus>
-		<importExportAgent>Imports &amp; Exports</importExportAgent>
-	</business>
-	<business>
-		<uniqueID>01011703209</uniqueID>
-		<businessName>Tuper S/A</businessName>
-		<address1>Av. PREFEITO ORNITH BOLLMANN 1441</address1>
-		<postCode>89282-427</postCode>
-		<city>São Bento do Sul</city>
-		<province>Santa Catarina</province>
-		<country>Brazil</country>
-		<phone>47 3631-5000</phone>
-		<fax>47 3631-5219</fax>
-		<phoneOrMobile>47 3631-5000</phoneOrMobile>
-		<email>tuper@tuper.com.br</email>
-		<website>www.tuper.com.br</website>
-		<nationalID>81315426000136</nationalID>
-		<internationalCode>3317</internationalCode>
-		<internationalLabel>Steel pipe and tubes</internationalLabel>
-		<language>POR</language>
-		<ceoName>Frank Bollmann</ceoName>
-		<ceoTitle>Director</ceoTitle>
-		<ceoFirstName>Frank</ceoFirstName>
-		<ceoLastName>Bollmann</ceoLastName>
-		<yearStarted>1989</yearStarted>
-		<salesVolume>1012881000</salesVolume>
-		<currency>BRL</currency>
-		<employeesTotal>1400</employeesTotal>
-		<statusCodeName>HQ</statusCodeName>
-		<familyMembers>14</familyMembers>
-		<legalStatus>Corporation</legalStatus>
-		<importExportAgent>Imports &amp; Exports</importExportAgent>
-	</business>
-	<business>
-		<uniqueID>01010853505</uniqueID>
-		<businessName>MUNICIPIO DE LINHARES</businessName>
-		<address1>Av. AUGUSTO PESTANA 790</address1>
-		<postCode>29900-192</postCode>
-		<city>Linhares</city>
-		<province>Espírito Santo</province>
-		<country>Brazil</country>
-		<phone>27 3372-6800</phone>
-		<phoneOrMobile>27 3372-6800</phoneOrMobile>
-		<website>http://www.linhares.es.gov.br/</website>
-		<nationalID>27167410000188</nationalID>
-		<internationalCode>9199</internationalCode>
-		<internationalLabel>General government, nec</internationalLabel>
-		<language>POR</language>
-		<yearStarted>1974</yearStarted>
-		<salesVolume>1441495187</salesVolume>
-		<currency>BRL</currency>
-		<employeesTotal>5095</employeesTotal>
-		<statusCodeName>HQ</statusCodeName>
-		<familyMembers>2</familyMembers>
-		<legalStatus>Government body</legalStatus>
-		<importExportAgent>None or Not Available</importExportAgent>
-	</business>
-	<business>
-		<uniqueID>01011253064</uniqueID>
-		<businessName>Município de Sorocaba</businessName>
-		<address1>Av. Engº Carlos Reinaldo Mendes 3041</address1>
-		<address2>Palácio Tropeiros</address2>
-		<postCode>18013-280</postCode>
-		<city>Sorocaba</city>
-		<province>São Paulo</province>
-		<country>Brazil</country>
-		<phone>15 3238-2100</phone>
-		<phoneOrMobile>15 3238-2100</phoneOrMobile>
-		<website>http://www.sorocaba.sp.gov.br/</website>
-		<nationalID>46634044000174</nationalID>
-		<internationalCode>9199</internationalCode>
-		<internationalLabel>General government, nec</internationalLabel>
-		<language>POR</language>
-		<ceoName>Jaqueline Coutinho</ceoName>
-		<ceoTitle>Mayor</ceoTitle>
-		<ceoFirstName>Jaqueline</ceoFirstName>
-		<ceoLastName>Coutinho</ceoLastName>
-		<yearStarted>1974</yearStarted>
-		<salesVolume>1665502339</salesVolume>
-		<currency>BRL</currency>
-		<employeesTotal>6167</employeesTotal>
-		<statusCodeName>Single Location</statusCodeName>
-		<familyMembers>0</familyMembers>
-		<legalStatus>Government body</legalStatus>
-		<importExportAgent>None or Not Available</importExportAgent>
 	</business>
 </business-data>
