@@ -16,6 +16,10 @@ router.get('/xml',function(req,res){
   res.sendFile(path.join(__dirname+'/business-data.xml'));
 });
 
+router.get('/q',function(req,res){
+  res.sendFile(path.join(__dirname+'/bookstemplate.xml'));
+});
+
 //add the router
 app.use('/', router);
 app.listen(process.env.port || 3000);
