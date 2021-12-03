@@ -2,6 +2,7 @@
 <?xml-stylesheet type="text/xsl" href="business-data.xsl"?>
 <business-data>
 	<business>
+		<id>1</id>
 		<uniqueID>1008118914</uniqueID>
 		<businessName>Liquigas Distribuidora S/A</businessName>
 		<address1>Av. PAULISTA 1842 1842</address1>
@@ -30,6 +31,7 @@
 		<importExportAgent>None or Not Available</importExportAgent>
 	</business>
 	<business>
+		<id>2</id>
 		<uniqueID>1009286447</uniqueID>
 		<businessName>Vallourec Tubos do Brasil</businessName>
 		<address1>Av. OLINTO MEIRELES 65</address1>
@@ -55,6 +57,7 @@
 		<importExportAgent>Imports &amp; Exports</importExportAgent>
 	</business>
 	<business>
+		<id>3</id>
 		<uniqueID>01011944884</uniqueID>
 		<businessName>Sapore S/A</businessName>
 		<address1>Av. ANTONIO ARTIOLI 570 570</address1>
@@ -84,6 +87,7 @@
 		<importExportAgent>None or Not Available</importExportAgent>
 	</business>
 	<business>
+		<id>4</id>
 		<uniqueID>01012441906</uniqueID>
 		<businessName>MUNICIPIO DE PONTA GROSSA</businessName>
 		<address1>Av. VISCONDE DE TAUNAY 950</address1>
@@ -110,6 +114,7 @@
 		<importExportAgent>None or Not Available</importExportAgent>
 	</business>
 	<business>
+		<id>5</id>
 		<uniqueID>01025792837</uniqueID>
 		<businessName>GIFTPAR COMERCIAL</businessName>
 		<address1>Rua ANNE FRANK 870</address1>
@@ -140,6 +145,7 @@
 		<importExportAgent>Exports</importExportAgent>
 	</business>
 	<business>
+		<id>6</id>
 		<uniqueID>01011235847</uniqueID>
 		<businessName>Minerva S/A</businessName>
 		<address1>Av. PROLONGAMENTO AVENIDA ANTONIO S/N</address1>
