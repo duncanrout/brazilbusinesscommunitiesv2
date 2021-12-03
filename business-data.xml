@@ -8,7 +8,7 @@
 		<address2>1 2 3 AND. PARTE 4 5 E 6</address2>
 		<postCode>01310-923</postCode>
 		<city>Sao Paulo</city>
-		<province>São Paulo</province>
+		<province value="1">São Paulo</province>
 		<country>Brazil</country>
 		<phone>11 3288-8573</phone>
 		<fax>11 3177-2110</fax>
@@ -36,7 +36,7 @@
 		<address2>ANEXO 7.01 PARTE SALA 109</address2>
 		<postCode>30640-010</postCode>
 		<city>Belo Horizonte</city>
-		<province>Minas Gerais</province>
+		<province value="2">Minas Gerais</province>
 		<country>Brazil</country>
 		<phone>31 3328-2121</phone>
 		<phoneOrMobile>31 3328-2121</phoneOrMobile>
@@ -61,7 +61,7 @@
 		<address2>EDIF: ALTDORF; BLOCO: G;</address2>
 		<postCode>13049-900</postCode>
 		<city>Campinas</city>
-		<province>São Paulo</province>
+		<province value="3">São Paulo</province>
 		<country>Brazil</country>
 		<phone>19 3278-3646</phone>
 		<fax>19 3278-4178</fax>
@@ -90,7 +90,7 @@
 		<address2>---</address2>
 		<postCode>84051-900</postCode>
 		<city>Ponta Grossa</city>
-		<province>Paraná</province>
+		<province value="4">Paraná</province>
 		<country>Brazil</country>
 		<phone>42 3222-6365</phone>
 		<phoneOrMobile>42 3222-6365</phoneOrMobile>
@@ -116,7 +116,7 @@
 		<address2>---</address2>
 		<postCode>81610-020</postCode>
 		<city>Curitiba</city>
-		<province>Paraná</province>
+		<province value="5">Paraná</province>
 		<country>Brazil</country>
 		<phone>41 3077-7620</phone>
 		<fax>41 3077-7620</fax>
@@ -146,7 +146,7 @@
 		<address2>---</address2>
 		<postCode>14781-545</postCode>
 		<city>Barretos</city>
-		<province>São Paulo</province>
+		<province value="6">São Paulo</province>
 		<country>Brazil</country>
 		<phone>17 3323-2408</phone>
 		<fax>17 3323-3041</fax>
