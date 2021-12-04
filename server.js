@@ -3,9 +3,11 @@ const app = express();
 const path = require('path');
 const router = express.Router();
 
-router.get('/',function(req,res){
+//Each router sends files to the client browser
+//As of now we are sending all of the files to the browser
+
+router.get('/test',function(req,res){
   res.sendFile(path.join(__dirname+'/index.html'));
-  //__dirname : It will resolve to your project folder.
 });
 
 router.get('/christie1',function(req,res){
@@ -22,6 +24,42 @@ router.get('/business-data',function(req,res){
 
 router.get('/business-data.xsl',function(req,res){
   res.sendFile(__dirname+'/business-data.xsl');
+});
+
+router.get('/about',function(req,res){
+  res.sendFile(__dirname+'/About.html');
+});
+
+router.get('/About.css',function(req,res){
+  res.sendFile(__dirname+'/About.css');
+});
+
+router.get('/',function(req,res){
+  res.sendFile(__dirname+'/Home.html');
+});
+
+router.get('/Home.css',function(req,res){
+  res.sendFile(__dirname+'/Home.css');
+});
+
+router.get('/nicepage.css',function(req,res){
+  res.sendFile(__dirname+'/nicepage.css');
+});
+
+router.get('/nicepage.js',function(req,res){
+  res.sendFile(__dirname+'/nicepage.js');
+});
+
+router.get('/images/bbc_logo.png',function(req,res){
+  res.sendFile(__dirname+'/images/bbc_logo.png');
+});
+
+router.get('/images/mag_glass.png',function(req,res){
+  res.sendFile(__dirname+'/images/mag_glass.png');
+});
+
+router.get('/images/mag_glass.png',function(req,res){
+  res.sendFile(__dirname+'/jquery.js');
 });
 
 //add the router
