@@ -24,36 +24,48 @@
     <form id="frm1" action="/business-data">
       <label for="name">Search:</label>
       <input type="text" id="name" name="name">
-
       <label for="province">Province:</label>
-    <!--  <input type="button" id="btnGenerate" value="Province List" onclick="ProvincePopulate()" /> -->
-
-      <!-- TAKE 1 -->
+      <!--  <input type="button" id="btnGenerate" value="Province List" onclick="ProvincePopulate()" /> -->
       <script type="text/javascript">
-              if(window.XMLHttpRequest){
-                data_xml=new XMLHttpRequest();
-              }
-              else {
-                data_xml=new ActiveObject("Microsoft.XMLHTTP");
-              }
+      //This script displays the Province Drop Down... TODO: find out how to save the value in the submit statement
+          if(window.XMLHttpRequest){
+              data_xml=new XMLHttpRequest();
+          }
+          else {
+              data_xml=new ActiveObject("Microsoft.XMLHTTP");
+          }
+          data_xml.open("GET",'business-data',false);
+          data_xml.send();
+          xml_str=data_xml.responseXML;
+          console.log(xml_str);
+          var x=xml_str.getElementsByTagName("province");
+          var y=xml_str.getElementsByTagName("id");
+          var str='<select name=id>';
+          for (i=0; i<x.length; i++) {
+              str +='<option value=' + y[i].childNodes[0].nodeValue + '>' + x[i].childNodes[0].nodeValue + '</option>';
+          }
+          str +='</select>';
+          console.log(str);
+          document.write(str);
+      </script>
 
-              data_xml.open("GET",'business-data',false);
-              data_xml.send();
-              xml_str=data_xml.responseXML;
-              console.log(xml_str);
-
-              var x=xml_str.getElementsByTagName("province");
-              var y=xml_str.getElementsByTagName("id");
-              var str='<select name=id>';
-              for (i=0; i<x.length; i++) {
-                str +='<option value=' + y[i].childNodes[0].nodeValue + '>' + x[i].childNodes[0].nodeValue + '</option>';
-              }
-              str +='</select>';
-              document.write(str);
-          </script>
-
+      <div id="demo">
+          <button type="button" onclick="loadXMLDoc()">Submit</button>
+      </div>
     </form>
 
+    <script>
+    //This funtion WILL be the search function - the final search
+    function loadXMLDoc() {
+        var xhttp = new XMLHttpRequest();
+        var form = document.getElementById("frm1");
+        console.log(form[0].value);
+        console.log(form);
+        //create xsl sheet and apply using express
+        xhttp.open("GET", "business-data", true);
+        xhttp.send();
+    }
+    </script>
   </div>
 </body>
 </html>
