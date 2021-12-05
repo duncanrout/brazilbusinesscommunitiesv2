@@ -135,6 +135,7 @@
       <script>
          //search function (currently just prints the current state of the form)
          function search() {
+
            //var form = document.getElementById("frm1");
            //console.log(form);
 
@@ -142,7 +143,7 @@
            console.log(searchInput);
 
            //Temporarily assigning these to values
-           var provinceInput = "São Paulo";
+           const checkboxes = ["Sao", "Temp", "Minas"];
            var employeeInputLower = "1500";
            employeeInputLower = parseInt(employeeInputLower);
            var employeeInputHigher = "5000";
@@ -162,8 +163,12 @@
            for companyCount:
               if(currentCompany.name contains searchInput):
                   if((employeeInputLower == null || employeeInputHigher == null) ||
-                  (employeeInputLower <= currentCompany.employeesTotal <= employeeInputLower):
-                      if()
+                  (employeeInputLower <= currentCompany.employeesTotal <= employeeInputHigher):
+                      for checkboxesCount:
+                          if(currentCompany.province contains checkboxes[x])
+                              add to html String
+
+          sendDocument();
            */
            //data_xml.open("GET",'business-data',false);
            //data_xml.send();
