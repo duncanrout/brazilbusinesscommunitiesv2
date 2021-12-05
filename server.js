@@ -46,9 +46,17 @@ router.get('/nicepage.css',function(req,res){
   res.sendFile(__dirname+'/nicepage.css');
 });
 
+//I believe we do not need nicepage.js and jquery.js! Kept it here just in case.
+
+/*
 router.get('/nicepage.js',function(req,res){
   res.sendFile(__dirname+'/nicepage.js');
 });
+
+router.get('/jquery.js',function(req,res){
+  res.sendFile(__dirname+'/jquery.js');
+});
+*/
 
 router.get('/images/bbc_logo.png',function(req,res){
   res.sendFile(__dirname+'/images/bbc_logo.png');
