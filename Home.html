@@ -135,14 +135,34 @@
          function search() {
            //var form = document.getElementById("frm1");
            //console.log(form);
-           var input = document.getElementById("searchInput").value;
-           console.log(input);
+
+           var searchInput = document.getElementById("searchInput").value;
+           console.log(searchInput);
+
+           //Temporarily assigning these to values
+           var provinceInput = "São Paulo";
+           var employeeInputLower = "1500";
+           employeeInputLower = parseInt(employeeInputLower);
+           var employeeInputHigher = "5000";
+           employeeInputHigher parseInt(employeeInputHigher);
+
            if(window.XMLHttpRequest){
                data_xml=new XMLHttpRequest();
            }
            else {
                data_xml=new ActiveObject("Microsoft.XMLHTTP");
            }
+
+           //PSUEDO CODE:::
+           /*
+           iterate thru the xml sheet and grab only the companies that apply to the filters
+
+           for companyCount:
+              if(currentCompany.name contains searchInput):
+                  if((employeeInputLower == null || employeeInputHigher == null) ||
+                  (employeeInputLower <= currentCompany.employeesTotal <= employeeInputLower):
+                      if()
+           */
            //data_xml.open("GET",'business-data',false);
            //data_xml.send();
 
