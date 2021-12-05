@@ -79,29 +79,27 @@
             </nav>
          </div>
       </header>
+
       <section class="u-clearfix u-section-1" id="sec-e61a">
          <div class="u-clearfix u-sheet u-sheet-1">
            <!-- Form... This will create a 'form' object that we can use for the results page query!-->
-           <h2 class="u-text u-text-default u-text-1">Find Business</h2>
+           <!-- TODO: Header is not showing! -->
+            <h2 class="u-text u-text-default u-text-1">Find Business</h2>
             <form id="frm1">
               <div class="wrapper">
-                 <input type="text" class="input" placeholder="Search...">
+                 <input type="text" class="input" id="searchInput" placeholder="Search...">
                  <div class="searchbtn"><i class="fas fa-search"></i></div>
                  <div class="dropdown">
                     <button type="button" onclick="myFunction()" class="dropbtn">Filters</button>
                     <div id="myDropdown" class="dropdown-content">
                        <ul class="category_filters">
                           <li >
-                             <input class="cat_type category-input" data-label="All" id="all" value="" name="checkboxes" type="checkbox" ><label for="all" >All</label>
+                             <input type="checkbox" name="checkboxes" id="provinceInput" value="Province" >
+                             <label class="category-label" for="Province" >Province</label>
                           </li>
                           <li >
-                             <input type="checkbox" name="checkboxes" id="City" value="City" ><label class="category-label" for="City" >City</label>
-                          </li>
-                          <li >
-                             <input type="checkbox" name="checkboxes" id="Province" value="Province" ><label class="category-label" for="Province" >Province</label>
-                          </li>
-                          <li >
-                             <input type="checkbox" name="checkboxes" id="Year" value="Year" ><label class="category-label" for="Year" >Year</label>
+                             <input type="checkbox" name="checkboxes" id="employeeInput" value="Number of Employees" >
+                             <label class="category-label" for="Number of Employees" >Number of Employees</label>
                           </li>
                        </ul>
                     </div>
@@ -135,8 +133,20 @@
 
          //search function (currently just prints the current state of the form)
          function search() {
-           var form = document.getElementById("frm1");
-           console.log(form);
+           //var form = document.getElementById("frm1");
+           //console.log(form);
+           var input = document.getElementById("searchInput").value;
+           console.log(input);
+           if(window.XMLHttpRequest){
+               data_xml=new XMLHttpRequest();
+           }
+           else {
+               data_xml=new ActiveObject("Microsoft.XMLHTTP");
+           }
+           //data_xml.open("GET",'business-data',false);
+           //data_xml.send();
+
+           //xml_str=data_xml.responseXML;
          }
       </script>
    </body>
