@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="business-data.xsl"?>
 <business-data>
-	<business>
+	<business id="1">
 		<id>1</id>
 		<uniqueID>1008118914</uniqueID>
 		<businessName>Liquigas Distribuidora S/A</businessName>
@@ -30,7 +30,7 @@
 		<legalStatus>Corporation</legalStatus>
 		<importExportAgent>None or Not Available</importExportAgent>
 	</business>
-	<business>
+	<business id="2">
 		<id>2</id>
 		<uniqueID>1009286447</uniqueID>
 		<businessName>Vallourec Tubos do Brasil</businessName>
@@ -56,7 +56,7 @@
 		<legalStatus>Partnership of unknown type</legalStatus>
 		<importExportAgent>Imports &amp; Exports</importExportAgent>
 	</business>
-	<business>
+	<business id="3">
 		<id>3</id>
 		<uniqueID>01011944884</uniqueID>
 		<businessName>Sapore S/A</businessName>
@@ -86,7 +86,7 @@
 		<legalStatus>Corporation</legalStatus>
 		<importExportAgent>None or Not Available</importExportAgent>
 	</business>
-	<business>
+	<business id="4">
 		<id>4</id>
 		<uniqueID>01012441906</uniqueID>
 		<businessName>MUNICIPIO DE PONTA GROSSA</businessName>
@@ -113,7 +113,7 @@
 		<legalStatus>Government body</legalStatus>
 		<importExportAgent>None or Not Available</importExportAgent>
 	</business>
-	<business>
+	<business id="5">
 		<id>5</id>
 		<uniqueID>01025792837</uniqueID>
 		<businessName>GIFTPAR COMERCIAL</businessName>
@@ -144,7 +144,7 @@
 		<legalStatus>Partnership of unknown type</legalStatus>
 		<importExportAgent>Exports</importExportAgent>
 	</business>
-	<business>
+	<business id="6">
 		<id>6</id>
 		<uniqueID>01011235847</uniqueID>
 		<businessName>Minerva S/A</businessName>

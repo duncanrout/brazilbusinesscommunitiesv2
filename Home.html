@@ -80,6 +80,7 @@
          </div>
       </header>
 
+
       <section class="u-clearfix u-section-1" id="sec-e61a">
          <div class="u-clearfix u-sheet u-sheet-1">
            <!-- Form... This will create a 'form' object that we can use for the results page query!-->
@@ -125,19 +126,19 @@
             <p class="u-small-text u-text u-text-variant u-text-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt maximus imperdiet. In id enim ut</p>
          </div>
       </footer>
-      <script>
+      <script type="text/javascript">
          //dropdown function used in form
          function myFunction() {
            document.getElementById("myDropdown").classList.toggle("show");
          }
 
       </script>
-      <script>
+
+      <script type="text/javascript">
          //search function (currently just prints the current state of the form)
          function search() {
-
-           //var form = document.getElementById("frm1");
-           //console.log(form);
+           var form = document.getElementById("frm1");
+           console.log(form);
 
            var searchInput = document.getElementById("searchInput").value;
            console.log(searchInput);
@@ -147,7 +148,7 @@
            var employeeInputLower = "1500";
            employeeInputLower = parseInt(employeeInputLower);
            var employeeInputHigher = "5000";
-           employeeInputHigher parseInt(employeeInputHigher);
+           employeeInputHigher = parseInt(employeeInputHigher);
 
            if(window.XMLHttpRequest){
                data_xml=new XMLHttpRequest();
@@ -156,8 +157,24 @@
                data_xml=new ActiveObject("Microsoft.XMLHTTP");
            }
 
+           data_xml.open("GET",'business-data',false);
+           data_xml.send();
+           xml_str=data_xml.responseXML;
+
+           const businessArray = xml_str.getElementsByTagName("business");
+           let companyCount = businessArray.length;
+
+           //Gives reference of overall xml_str structure
+           console.log(xml_str);
+
+           //prints all the business names!
+           for (let i = 1; i < 2 * companyCount; i += 2) {
+             console.log((((xml_str.childNodes[1]).childNodes[i]).childNodes[5]).innerHTML);
+           }
+
+          /*
            //PSUEDO CODE:::
-           /*
+
            iterate thru the xml sheet and grab only the companies that apply to the filters
 
            for companyCount:
@@ -169,12 +186,13 @@
                               add to html String
 
           sendDocument();
-           */
            //data_xml.open("GET",'business-data',false);
            //data_xml.send();
 
            //xml_str=data_xml.responseXML;
+            */
          }
       </script>
+
    </body>
 </html>
