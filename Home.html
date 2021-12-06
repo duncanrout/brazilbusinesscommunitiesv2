@@ -131,20 +131,20 @@
          function myFunction() {
            document.getElementById("myDropdown").classList.toggle("show");
          }
-
       </script>
 
       <script type="text/javascript">
-         //search function (currently just prints the current state of the form)
          function search() {
            var form = document.getElementById("frm1");
            console.log(form);
 
            var searchInput = document.getElementById("searchInput").value;
+           searchInput = searchInput.toLowerCase();
            console.log(searchInput);
 
            //Temporarily assigning these to values
-           const checkboxes = ["Sao", "Temp", "Minas"];
+           const checkboxes = ["Sao", "Temp", "Minas Gerais"];
+           let checkboxesLength = checkboxes.length;
            var employeeInputLower = "1500";
            employeeInputLower = parseInt(employeeInputLower);
            var employeeInputHigher = "5000";
@@ -167,32 +167,35 @@
            //Gives reference of overall xml_str structure
            console.log(xml_str);
 
-           //prints all the business names!
+           var name = "";
+           var province = "";
+           var employeeCount = "";
+
            for (let i = 1; i < 2 * companyCount; i += 2) {
-             console.log((((xml_str.childNodes[1]).childNodes[i]).childNodes[5]).innerHTML);
+             name = ((((xml_str.childNodes[1]).childNodes[i]).childNodes[5]).innerHTML);
+             name = name.toLowerCase();
+             province = ((((xml_str.childNodes[1]).childNodes[i]).childNodes[13]).innerHTML);
+             employeeCount = ((((xml_str.childNodes[1]).childNodes[i]).childNodes[23]).innerHTML);
+             employeeCount = parseInt(employeeCount);
+
+             //TODO: Account for no input from search bar
+             if(name.includes(searchInput)){
+               //TODO: Account for no input from user for employeeCount
+               if(employeeInputLower <= employeeCount && employeeCount <= employeeInputHigher){
+                 for(let x = 0; x < checkboxesLength; x++){
+                   //TODO: set checboxes array all to lowercase & set province to lowercase
+                   if(province.includes(checkboxes[x])){
+                     console.log(name);
+                     //str = str + ...
+                   }
+                 }
+               }
+             }
+             employeeCount = employeeCount.toString();
            }
 
-          /*
-           //PSUEDO CODE:::
-
-           iterate thru the xml sheet and grab only the companies that apply to the filters
-
-           for companyCount:
-              if(currentCompany.name contains searchInput):
-                  if((employeeInputLower == null || employeeInputHigher == null) ||
-                  (employeeInputLower <= currentCompany.employeesTotal <= employeeInputHigher):
-                      for checkboxesCount:
-                          if(currentCompany.province contains checkboxes[x])
-                              add to html String
-
-          sendDocument();
-           //data_xml.open("GET",'business-data',false);
-           //data_xml.send();
-
-           //xml_str=data_xml.responseXML;
-            */
+          //sendDocument();
          }
       </script>
-
    </body>
 </html>

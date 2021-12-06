@@ -7,28 +7,13 @@
 		<businessName>Liquigas Distribuidora S/A</businessName>
 		<address1>Av. PAULISTA 1842 1842</address1>
 		<address2>1 2 3 AND. PARTE 4 5 E 6</address2>
-		<postCode>01310-923</postCode>
 		<city>Sao Paulo</city>
 		<province value="1">São Paulo</province>
 		<country>Brazil</country>
 		<phone>11 3288-8573</phone>
-		<fax>11 3177-2110</fax>
-		<phoneOrMobile>11 3288-8573</phoneOrMobile>
 		<email>privacidade@liquigas.com.br</email>
 		<website>http://www.liquigas.com.br</website>
-		<nationalID>60886413000147</nationalID>
-		<internationalCode>5984</internationalCode>
-		<internationalLabel>Liquefied petroleum gas dealers</internationalLabel>
-		<language>POR</language>
-		<ceoTitle>Director</ceoTitle>
-		<yearStarted>1953</yearStarted>
-		<salesVolume>4837207000</salesVolume>
-		<currency>BRL</currency>
 		<employeesTotal>4000</employeesTotal>
-		<statusCodeName>HQ</statusCodeName>
-		<familyMembers>74</familyMembers>
-		<legalStatus>Corporation</legalStatus>
-		<importExportAgent>None or Not Available</importExportAgent>
 	</business>
 	<business id="2">
 		<id>2</id>
@@ -36,25 +21,13 @@
 		<businessName>Vallourec Tubos do Brasil</businessName>
 		<address1>Av. OLINTO MEIRELES 65</address1>
 		<address2>ANEXO 7.01 PARTE SALA 109</address2>
-		<postCode>30640-010</postCode>
 		<city>Belo Horizonte</city>
 		<province value="2">Minas Gerais</province>
 		<country>Brazil</country>
 		<phone>31 3328-2121</phone>
-		<phoneOrMobile>31 3328-2121</phoneOrMobile>
-		<nationalID>17170150000146</nationalID>
-		<internationalCode>3312</internationalCode>
-		<internationalLabel>Blast furnaces and steel mills</internationalLabel>
-		<language>POR</language>
-		<ceoTitle>Director</ceoTitle>
-		<yearStarted>1952</yearStarted>
-		<salesVolume>1244954000</salesVolume>
-		<currency>BRL</currency>
+		<email>privacidade@liquigas.com.br</email>
+		<website>http://www.liquigas.com.br</website>
 		<employeesTotal>4200</employeesTotal>
-		<statusCodeName>HQ</statusCodeName>
-		<familyMembers>88</familyMembers>
-		<legalStatus>Partnership of unknown type</legalStatus>
-		<importExportAgent>Imports &amp; Exports</importExportAgent>
 	</business>
 	<business id="3">
 		<id>3</id>
@@ -62,29 +35,13 @@
 		<businessName>Sapore S/A</businessName>
 		<address1>Av. ANTONIO ARTIOLI 570 570</address1>
 		<address2>EDIF: ALTDORF; BLOCO: G;</address2>
-		<postCode>13049-900</postCode>
 		<city>Campinas</city>
 		<province value="3">São Paulo</province>
 		<country>Brazil</country>
 		<phone>19 3278-3646</phone>
-		<fax>19 3278-4178</fax>
-		<phoneOrMobile>19 3278-3646</phoneOrMobile>
-		<nationalID>67945071000138</nationalID>
-		<internationalCode>5812</internationalCode>
-		<internationalLabel>Eating places</internationalLabel>
-		<language>POR</language>
-		<ceoName>Daniel Eugenio Rivas Mendez</ceoName>
-		<ceoTitle>Chief Executive Officer</ceoTitle>
-		<ceoFirstName>Daniel Eugenio</ceoFirstName>
-		<ceoLastName>Rivas Mendez</ceoLastName>
-		<yearStarted>1992</yearStarted>
-		<salesVolume>1844056000</salesVolume>
-		<currency>BRL</currency>
+		<email>none</email>
+		<website>none</website>
 		<employeesTotal>14761</employeesTotal>
-		<statusCodeName>HQ</statusCodeName>
-		<familyMembers>1171</familyMembers>
-		<legalStatus>Corporation</legalStatus>
-		<importExportAgent>None or Not Available</importExportAgent>
 	</business>
 	<business id="4">
 		<id>4</id>
@@ -92,87 +49,40 @@
 		<businessName>MUNICIPIO DE PONTA GROSSA</businessName>
 		<address1>Av. VISCONDE DE TAUNAY 950</address1>
 		<address2>---</address2>
-		<postCode>84051-900</postCode>
 		<city>Ponta Grossa</city>
 		<province value="4">Paraná</province>
 		<country>Brazil</country>
 		<phone>42 3222-6365</phone>
-		<phoneOrMobile>42 3222-6365</phoneOrMobile>
 		<email>pgcmaspg@gmail.com</email>
 		<website>http://www.pontagrossa.pr.gov.br/</website>
-		<nationalID>76175884000187</nationalID>
-		<internationalCode>9199</internationalCode>
-		<internationalLabel>General government, nec</internationalLabel>
-		<language>POR</language>
-		<yearStarted>1974</yearStarted>
-		<salesVolume>1107645467</salesVolume>
-		<currency>BRL</currency>
 		<employeesTotal>3915</employeesTotal>
-		<statusCodeName>HQ</statusCodeName>
-		<familyMembers>5</familyMembers>
-		<legalStatus>Government body</legalStatus>
-		<importExportAgent>None or Not Available</importExportAgent>
 	</business>
 	<business id="5">
 		<id>5</id>
 		<uniqueID>01025792837</uniqueID>
 		<businessName>GIFTPAR COMERCIAL</businessName>
 		<address1>Rua ANNE FRANK 870</address1>
-		<address2>---</address2>
-		<postCode>81610-020</postCode>
+		<address2>none</address2>
 		<city>Curitiba</city>
 		<province value="5">Paraná</province>
 		<country>Brazil</country>
 		<phone>41 3077-7620</phone>
-		<fax>41 3077-7620</fax>
-		<phoneOrMobile>41 3077-7620</phoneOrMobile>
+		<email>none</email>
 		<website>http://fptstore.com.br/</website>
-		<nationalID>13951650000164</nationalID>
-		<internationalCode>5137</internationalCode>
-		<internationalLabel>Women's and children's clothing</internationalLabel>
-		<language>POR</language>
-		<ceoName>Varlei Cazarim</ceoName>
-		<ceoTitle>Sales Director</ceoTitle>
-		<ceoFirstName>Varlei</ceoFirstName>
-		<ceoLastName>Cazarim</ceoLastName>
-		<yearStarted>2011</yearStarted>
-		<salesVolume>2086279130</salesVolume>
-		<currency>BRL</currency>
 		<employeesTotal>8</employeesTotal>
-		<statusCodeName>HQ</statusCodeName>
-		<familyMembers>2</familyMembers>
-		<legalStatus>Partnership of unknown type</legalStatus>
-		<importExportAgent>Exports</importExportAgent>
 	</business>
 	<business id="6">
 		<id>6</id>
 		<uniqueID>01011235847</uniqueID>
 		<businessName>Minerva S/A</businessName>
 		<address1>Av. PROLONGAMENTO AVENIDA ANTONIO S/N</address1>
-		<address2>---</address2>
-		<postCode>14781-545</postCode>
+		<address2>none</address2>
 		<city>Barretos</city>
 		<province value="6">São Paulo</province>
 		<country>Brazil</country>
 		<phone>17 3323-2408</phone>
-		<fax>17 3323-3041</fax>
-		<phoneOrMobile>17 3323-2408</phoneOrMobile>
 		<website>http://www.minerva.ind.br</website>
-		<nationalID>67620377000114</nationalID>
-		<internationalCode>2013</internationalCode>
-		<internationalLabel>Sausages and other prepared meats</internationalLabel>
-		<language>POR</language>
-		<ceoName>Fernando Galletti de Queiroz</ceoName>
-		<ceoTitle>Director</ceoTitle>
-		<ceoFirstName>Fernando Galletti</ceoFirstName>
-		<ceoLastName>de Queiroz</ceoLastName>
-		<yearStarted>1992</yearStarted>
-		<salesVolume>10103374000</salesVolume>
-		<currency>BRL</currency>
+		<email>none</email>
 		<employeesTotal>12825</employeesTotal>
-		<statusCodeName>HQ</statusCodeName>
-		<familyMembers>54</familyMembers>
-		<legalStatus>Corporation</legalStatus>
-		<importExportAgent>Imports &amp; Exports</importExportAgent>
 	</business>
 </business-data>
