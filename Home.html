@@ -80,7 +80,6 @@
          </div>
       </header>
 
-
       <section class="u-clearfix u-section-1" id="sec-e61a">
          <div class="u-clearfix u-sheet u-sheet-1">
            <!-- Form... This will create a 'form' object that we can use for the results page query!-->
@@ -97,6 +96,8 @@
                           <li >
                              <input type="checkbox" name="checkboxes" id="provinceInput" value="Province" >
                              <label class="category-label" for="Province" >Province</label>
+                             <!-- TODO: Make good -->
+                             <div id="provinceList" class="dropdown-content"></div>
                           </li>
                           <li >
                              <input type="checkbox" name="checkboxes" id="employeeInput" value="Number of Employees" >
@@ -132,6 +133,8 @@
            document.getElementById("myDropdown").classList.toggle("show");
          }
       </script>
+
+
 
       <script type="text/javascript">
          function search() {
@@ -170,6 +173,7 @@
            var name = "";
            var province = "";
            var employeeCount = "";
+           var str = "<html><head><style>table {  font-family: arial, sans-serif;  border-collapse: collapse;  width: 100%;}td, th {  border: 1px solid #dddddd;  text-align: left;  padding: 8px;}tr:nth-child(even) {  background-color: #dddddd;}</style></head><body><h2>Results!</h2>  <table><tr> <th>Company</th>    <th>Province</th>    <th>Number of Employees</th>  </tr>";
 
            for (let i = 1; i < 2 * companyCount; i += 2) {
              name = ((((xml_str.childNodes[1]).childNodes[i]).childNodes[5]).innerHTML);
@@ -186,15 +190,17 @@
                    //TODO: set checboxes array all to lowercase & set province to lowercase
                    if(province.includes(checkboxes[x])){
                      console.log(name);
-                     //str = str + ...
+                     str = str +   "<tr>    <td>" + name + "</td>    <td>" + province + "</td>    <td>" + employeeCount+ "</td>  </tr>";
                    }
                  }
                }
              }
              employeeCount = employeeCount.toString();
            }
-
-          //sendDocument();
+           //End of string
+           str = str + "</table>  <form action='/'>    <input type='submit' value='Go Back!' /></form> </body></html>";
+           //TODO: this deletes the old HTML file... Maybe try a different way?
+           document.write(str);
          }
       </script>
    </body>
