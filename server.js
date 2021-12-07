@@ -3,8 +3,19 @@ const app = express();
 const path = require('path');
 const router = express.Router();
 
+const { JSDOM } = require( "jsdom" );
+const { window } = new JSDOM( "" );
+const $ = require("jquery")(window);
+
 //Each router sends files to the client browser
 //As of now we are sending all of the files to the browser
+router.get('/jquery.js',function(req,res){
+  res.sendFile(__dirname+'/jquery.js');
+});
+
+router.get('/nicepage.js',function(req,res){
+  res.sendFile(__dirname+'/nicepage.js');
+});
 
 router.get('/test',function(req,res){
   res.sendFile(path.join(__dirname+'/index.html'));
@@ -48,15 +59,6 @@ router.get('/nicepage.css',function(req,res){
 
 //I believe we do not need nicepage.js and jquery.js! Kept it here just in case.
 
-/*
-router.get('/nicepage.js',function(req,res){
-  res.sendFile(__dirname+'/nicepage.js');
-});
-
-router.get('/jquery.js',function(req,res){
-  res.sendFile(__dirname+'/jquery.js');
-});
-*/
 
 router.get('/images/bbc_logo.png',function(req,res){
   res.sendFile(__dirname+'/images/bbc_logo.png');

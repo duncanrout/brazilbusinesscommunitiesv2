@@ -4,6 +4,7 @@
       <title>Brazillian Business Communities</title>
       <link rel="stylesheet" href="nicepage.css" media="screen">
       <link rel="stylesheet" href="Home.css" media="screen">
+      <script src="https://code.jquery.com/jquery-1.12.4.js" integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU=" crossorigin="anonymous"></script>
       <script class="u-script" type="text/javascript" src="jquery.js" defer=""></script>
       <script class="u-script" type="text/javascript" src="nicepage.js" defer=""></script>
       <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i">
@@ -88,20 +89,26 @@
             <form id="frm1">
               <div class="wrapper">
                  <input type="text" class="input" id="searchInput" placeholder="Search...">
-                 <div class="searchbtn"><i class="fas fa-search"></i></div>
                  <div class="dropdown">
                     <button type="button" onclick="myFunction()" class="dropbtn">Filters</button>
                     <div id="myDropdown" class="dropdown-content">
                        <ul class="category_filters">
                           <li >
-                             <input type="checkbox" name="checkboxes" id="provinceInput" value="Province" >
-                             <label class="category-label" for="Province" >Province</label>
+                             <label class="category-label-prov" >Provinces: </label>
+                             <input type="checkbox" name="checkboxes" id="Minas" value="Minas Gerais" >
+                             <label class="category-label" for="Province" >Minas Gerais</label>
+                             <input type="checkbox" name="checkboxes" id="provinceInput" value="Paraná" >
+                             <label class="category-label" for="Province" >Paraná</label>
+                             <input type="checkbox" name="checkboxes" id="provinceInput" value="São Paulo" >
+                             <label class="category-label" for="Province" >São Paulo</label>
                              <!-- TODO: Make good -->
                              <div id="provinceList" class="dropdown-content"></div>
                           </li>
                           <li >
                              <input type="checkbox" name="checkboxes" id="employeeInput" value="Number of Employees" >
                              <label class="category-label" for="Number of Employees" >Number of Employees</label>
+                             <input type="text" class="min_max" placeholder="Min">
+                             <input type="text" class="min_max" placeholder="Max">
                           </li>
                        </ul>
                     </div>
@@ -185,12 +192,13 @@
              //TODO: Account for no input from search bar
              if(name.includes(searchInput)){
                //TODO: Account for no input from user for employeeCount
-               if(employeeInputLower <= employeeCount && employeeCount <= employeeInputHigher){
+               if( ( employeeInputLower <= employeeCount && employeeCount <= employeeInputHigher ) || true){
                  for(let x = 0; x < checkboxesLength; x++){
                    //TODO: set checboxes array all to lowercase & set province to lowercase
-                   if(province.includes(checkboxes[x])){
+                   if(province.includes(checkboxes[x]) || true){
                      console.log(name);
                      str = str +   "<tr>    <td>" + name + "</td>    <td>" + province + "</td>    <td>" + employeeCount+ "</td>  </tr>";
+                     x = checkboxesLength;
                    }
                  }
                }

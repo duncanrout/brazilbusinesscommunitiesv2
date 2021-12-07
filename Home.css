@@ -66,6 +66,22 @@
     font-weight: bold;
 }
 
+.wrapper .min_max {
+    width: 15%;
+    padding: 3px 5px;
+    border: none;
+    border-radius: 3px;
+    font-weight: bold;
+}
+/*
+.divider{
+    width:15px;
+    height:auto;
+    display:inline-block;
+}
+*/
+
+/*
 .searchbtn {
     background: #ffec00;
     width: 10%;
@@ -73,7 +89,6 @@
     position: relative;
     cursor: pointer;
 }
-
 .searchbtn .fas{
 	position: absolute;
     top: 50%;
@@ -81,6 +96,7 @@
     transform: translate(-50%, -50%);
     font-size: 18px;
 }
+*/
 
 /* Dropdown Button */
 .dropbtn {
@@ -118,6 +134,10 @@
 .category_filters {
 	list-style: none;
 	text-align: left;
+}
+
+.category-label-prov {
+  font-weight: 600;
 }
 
 @media (max-width: 991px) {
