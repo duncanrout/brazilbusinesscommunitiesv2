@@ -53,7 +53,7 @@
                         <a class="u-border-2 u-button-style u-nav-link u-text-active-white u-text-hover-grey-15 u-text-white" href="about" style="padding: 10px 20px;">About</a>
                      </li>
                      <li class="u-nav-item">
-                        <a class="u-border-2 u-button-style u-nav-link u-text-active-white u-text-hover-grey-15 u-text-white" href="Index.html" style="padding: 10px 13px 10px 20px;">Index</a>
+                        <a class="u-border-2 u-button-style u-nav-link u-text-active-white u-text-hover-grey-15 u-text-white" href="business-data" style="padding: 10px 13px 10px 20px;">Index</a>
                      </li>
                   </ul>
                </div>
@@ -106,8 +106,8 @@
                           </li>
                           <li >
                              <label class="category-label-prov" for="Number of Employees" >Number of Employees: </label>
-                             <input type="text" class="min_max" id="min" placeholder="Min">
-                             <input type="text" class="min_max" id="min" placeholder="Max">
+                             <input type="text" class="input min_max" id="minInput" placeholder="Min">
+                             <input type="text" class="input min_max" id="maxInput" placeholder="Max">
                           </li>
                        </ul>
                     </div>
@@ -147,15 +147,48 @@
 
            var searchInput = document.getElementById("searchInput").value;
            searchInput = searchInput.toLowerCase();
-           console.log(searchInput);
 
-           //Temporarily assigning these to values
-           const checkboxes = ["Sao", "Temp", "Minas Gerais"];
+
+
+           var checkedBoxes = [document.getElementById("Minas").checked, document.getElementById("Parana").checked, document.getElementById("Sao").checked];
+           let checkedBoxesLength = checkedBoxes.length;
+
+           const checkboxes = [];
+
+           if(checkedBoxes[0]){
+             checkboxes.push("Minas");
+           }
+
+           if(checkedBoxes[1]){
+             checkboxes.push("Paraná");
+           }
+
+           if(checkedBoxes[2]){
+             checkboxes.push("São");
+           }
+
+           //TODO: Fix / Decide on filter settings
+           if(checkboxes.length == 0)
+           {
+             checkboxes.push("Minas");
+             checkboxes.push("Paraná");
+             checkboxes.push("São");
+           }
+
            let checkboxesLength = checkboxes.length;
-           var employeeInputLower = "1500";
+
+           var employeeInputLower = document.getElementById("minInput").value;
            employeeInputLower = parseInt(employeeInputLower);
-           var employeeInputHigher = "5000";
+           var employeeInputHigher = document.getElementById("maxInput").value;
            employeeInputHigher = parseInt(employeeInputHigher);
+
+           if(Number.isNaN(employeeInputHigher)){
+             employeeInputHigher = 9999999;
+           }
+
+           if(Number.isNaN(employeeInputLower)){
+             employeeInputLower = 0;
+           }
 
            if(window.XMLHttpRequest){
                data_xml=new XMLHttpRequest();
@@ -186,14 +219,10 @@
              employeeCount = ((((xml_str.childNodes[1]).childNodes[i]).childNodes[23]).innerHTML);
              employeeCount = parseInt(employeeCount);
 
-             //TODO: Account for no input from search bar
              if(name.includes(searchInput)){
-               //TODO: Account for no input from user for employeeCount
-               if( ( employeeInputLower <= employeeCount && employeeCount <= employeeInputHigher ) || true){
+               if(employeeInputLower <= employeeCount && employeeCount <= employeeInputHigher){
                  for(let x = 0; x < checkboxesLength; x++){
-                   //TODO: set checboxes array all to lowercase & set province to lowercase
-                   if(province.includes(checkboxes[x]) || true){
-                     console.log(name);
+                   if(province.includes(checkboxes[x])){
                      str = str +   "<tr>    <td>" + name + "</td>    <td>" + province + "</td>    <td>" + employeeCount+ "</td>  </tr>";
                      x = checkboxesLength;
                    }
