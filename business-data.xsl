@@ -8,7 +8,6 @@
           <table>
             <th>Business</th>
             <th>Province</th>
-            <th>Year Founded</th>
             <th># of Employees</th>
             <xsl:apply-templates select="business-data/business">
               <xsl:sort select="businessName" order="ascending" />
