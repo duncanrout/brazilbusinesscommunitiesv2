@@ -97,18 +97,17 @@
                              <label class="category-label-prov" >Provinces: </label>
                              <input type="checkbox" name="checkboxes" id="Minas" value="Minas Gerais" >
                              <label class="category-label" for="Province" >Minas Gerais</label>
-                             <input type="checkbox" name="checkboxes" id="provinceInput" value="Paraná" >
+                             <input type="checkbox" name="checkboxes" id="Parana" value="Paraná" >
                              <label class="category-label" for="Province" >Paraná</label>
-                             <input type="checkbox" name="checkboxes" id="provinceInput" value="São Paulo" >
+                             <input type="checkbox" name="checkboxes" id="Sao" value="São Paulo" >
                              <label class="category-label" for="Province" >São Paulo</label>
                              <!-- TODO: Make good -->
                              <div id="provinceList" class="dropdown-content"></div>
                           </li>
                           <li >
-                             <input type="checkbox" name="checkboxes" id="employeeInput" value="Number of Employees" >
-                             <label class="category-label" for="Number of Employees" >Number of Employees</label>
-                             <input type="text" class="min_max" placeholder="Min">
-                             <input type="text" class="min_max" placeholder="Max">
+                             <label class="category-label-prov" for="Number of Employees" >Number of Employees: </label>
+                             <input type="text" class="min_max" id="min" placeholder="Min">
+                             <input type="text" class="min_max" id="min" placeholder="Max">
                           </li>
                        </ul>
                     </div>
@@ -140,8 +139,6 @@
            document.getElementById("myDropdown").classList.toggle("show");
          }
       </script>
-
-
 
       <script type="text/javascript">
          function search() {
