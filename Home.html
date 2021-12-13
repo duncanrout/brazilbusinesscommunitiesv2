@@ -16,9 +16,6 @@
          "logo": "images/bbc_logo.png"
            }
       </script>
-      <meta name="theme-color" content="#478ac9">
-      <meta property="og:title" content="Home">
-      <meta property="og:type" content="website">
    </head>
    <body class="u-body">
       <header class="u-clearfix u-custom-color-1 u-header u-header" id="sec-ca42">
@@ -112,7 +109,7 @@
                        </ul>
                     </div>
                  </div>
-                 <button type="button" onclick="search()">Search!</button>
+                 <button type="button" onclick="search()">Search</button>
               </div>
             </form>
          </div>
@@ -125,7 +122,7 @@
                Donec et magna ut massa consectetur convallis eu ac neque. Suspendisse
                finibus dui sed nisi convallis, nec&nbsp;
             </p>
-            <a href="about" data-page-id="11101328" class="u-border-none u-btn u-btn-rectangle u-button-style u-color-scheme-summer-time u-color-style-multicolor-1 u-custom-color-1 u-radius-0 u-btn-1">Learn more</a>
+            <a href="about" class="u-border-none u-btn u-btn-rectangle u-button-style u-color-scheme-summer-time u-color-style-multicolor-1 u-custom-color-1 u-radius-0 u-btn-1">Learn more</a>
          </div>
       </section>
       <footer class="u-align-center u-clearfix u-footer u-grey-80 u-footer" id="sec-5e92">
@@ -145,7 +142,7 @@
           var name = "";
           var province = "";
           var employeeCount = "";
-          var str = "<html><head><style>table {  font-family: arial, sans-serif;  border-collapse: collapse;  width: 100%;}td, th {  border: 1px solid #dddddd;  text-align: left;  padding: 8px;}tr:nth-child(even) {  background-color: #dddddd;}</style></head><body><h2>Results!</h2>  <table><tr> <th>Company</th>    <th>Province</th>    <th>Number of Employees</th>  </tr>";
+          var str = "<html><head><link id=\"u-theme-google-font\" rel=\"stylesheet\" href=\"https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i\"><link id=\"u-page-google-font\" rel=\"stylesheet\" href=\"https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i\"><link rel=\"stylesheet\" href=\"nicepage.css\" media=\"screen\"><link rel=\"stylesheet\" href=\"Home.css\" media=\"screen\"><style>td, th {  border: 1px solid #dddddd;  text-align: left;  padding: 8px;}tr:nth-child(even) {  background-color: #dddddd;}</style></head><body><div class='title_wrap'><h2>Your Search Results</h2></div> <table class=\"xml_table\"><tr> <th>Company</th>    <th>Province</th>    <th>Number of Employees</th>  </tr>";
 
           for (let i = 1; i < 2 * companyCount; i += 2) {
             name = ((((xml_str.childNodes[1]).childNodes[i]).childNodes[5]).innerHTML);
@@ -167,7 +164,7 @@
             employeeCount = employeeCount.toString();
           }
           //End of string
-          str = str + "</table>  <form action='/'>    <input type='submit' value='Go Back!' /></form> </body></html>";
+          str = str + "</table>  <form action='/'>    <div class='return_wrapper'><input class='u-border-none u-btn u-btn-rectangle u-button-style u-color-scheme-summer-time u-color-style-multicolor-1 u-custom-color-1 u-radius-0 u-btn-1' type='submit' value='New Search' /></div></form> <footer class=\"results_footer u-align-center u-clearfix u-footer u-grey-80 u-footer\" id=\"sec-5e92\"> <div class=\"u-clearfix u-sheet u-sheet-1\"> <p class=\"u-small-text u-text u-text-variant u-text-1\">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt maximus imperdiet. In id enim ut</p> </div></footer></body></html>";
           return str;
         }
       </script>

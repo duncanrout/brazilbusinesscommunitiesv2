@@ -34950,9 +34950,9 @@ a.u-link.u-text-hover-grey-90:hover {
             color: #5eb860 !important;
         }
 
-        
 
-        
+
+
         .u-border-custom-color-1,
         .u-separator-custom-color-1:after
         {
@@ -34999,9 +34999,9 @@ a.u-link.u-text-hover-grey-90:hover {
         {
             border-color: #4dae4f !important;
         }
-        
 
-        
+
+
         .u-text-custom-color-1,
         a.u-button-style.u-text-custom-color-1,
         a.u-button-style.u-text-custom-color-1[class*="u-border-"]
@@ -35064,7 +35064,7 @@ a.u-link.u-text-hover-grey-90:hover {
             color: #5eb860 !important;
         }
 
-        
+
 
         /** common-rules **/
         h1.u-title
@@ -35093,7 +35093,7 @@ a.u-link.u-text-hover-grey-90:hover {
         }
         h2:not(.u-subtitle)
         {
-        font-weight: 400;
+        font-weight: 700;
         font-size: 2.25rem;
         line-height: 1.1;
         margin-top: 20px;
@@ -35224,7 +35224,7 @@ a.u-link.u-text-hover-grey-90:hover {
         /*end-media rules*/
         /** publish-rules **/
 
-        
+
 
         /** cms-rules **/
         /*begin-responsive rules*/
@@ -35336,7 +35336,7 @@ a.u-link.u-text-hover-grey-90:hover {
         color: #ffffff;
         }
         /** alt-color-rules **/
-    
+
 
 
 /*end-variables sitestylecss*/
@@ -35475,6 +35475,6 @@ a.u-link.u-text-hover-grey-90:hover {
   }
 }
 
- /*begin-variables base-font-size*/ 
+ /*begin-variables base-font-size*/
  html { font-size: 16px; }
  /*end-variables base-font-size*/
